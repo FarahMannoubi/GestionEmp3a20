@@ -13,6 +13,10 @@ public class Departement implements Comparable<Departement> {
         this.nomDepartement = nomDepartement;
         this.nbrEmploye = nbrEmploye;
     }
+    public Departement(int id, String nomDepartement){
+        this.id = id;
+        this.nomDepartement = nomDepartement;
+    }
     public int getId() {
         return id;
     }

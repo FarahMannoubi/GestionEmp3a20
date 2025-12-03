@@ -16,6 +16,11 @@ public class Employe implements Comparable<Employe> {
        this.nomDep = nomDep;
        this.grade = grade;
     }
+    public Employe(int id,String nom) {
+        this.id = id;
+        this.nom = nom;
+
+    }
    public int getId() {
        return id;
    }
@@ -59,7 +64,7 @@ public class Employe implements Comparable<Employe> {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nom, prenom, nomDep, grade);
+        return Objects.hash(id, nom);
     }
 
     public String toString(){
